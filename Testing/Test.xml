@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-x86_64-linux-gnu-g++-9"
+	BuildStamp="20210615-2113-Experimental"
+	Name="asanchez"
+	Generator="ctest-3.16.3"
+	CompilerName="/bin/x86_64-linux-gnu-g++-9"
+	CompilerVersion="9.3.0"
+	OSName="Linux"
+	Hostname="asanchez"
+	OSRelease="5.8.0-55-generic"
+	OSVersion="#62~20.04.1-Ubuntu SMP Wed Jun 2 08:55:04 UTC 2021"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="126"
+	ProcessorCacheSize="8192"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="15692"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3353.32"
+	>
+	<Testing>
+		<StartDateTime>Jun 16 00:02 CEST</StartDateTime>
+		<StartTestTime>1623794521</StartTestTime>
+		<TestList>
+			<Test>./src/ExampleTests.DemonstrateTestMacros</Test>
+			<Test>./src/example_test</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>ExampleTests.DemonstrateTestMacros</Name>
+			<Path>./src</Path>
+			<FullName>./src/ExampleTests.DemonstrateTestMacros</FullName>
+			<FullCommandLine>/home/asanchez/GIT/UnitTesting/build/src/example_test "--gtest_filter=ExampleTests.DemonstrateTestMacros" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00179496</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/asanchez/GIT/UnitTesting/build/src/example_test "--gtest_filter=ExampleTests.DemonstrateTestMacros" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkE1rwzAMhu/+FTo2h8TbddDDoKWMsW6k7SmE4iZqarDlYCvb2K9fnJSSDgbRSR8Pr14p74g0NWCVpkUCZ+8syIuzKFVQVF3wR25e9vJAmvcYuEflqdOmlsca2yAb5xqD3E/S4KtJKYcyZsconVWV2DrGJ9gMCEQxOGvD6GEJ629lW4OxGbIVWkeBveKh8aYq74IolrcoIb+6fgQedKLrax46zZiJIr1FCRvjTsqMc6RP7R1ZpJ5FTrv2DzzVnPoSBeSHLQxRznI8svD+OouHxQPYkMwzM8LAjpVJxLxrGZVPa/dF97/874fgFWX3e/qLPp53u/UqfmBkM/ELcae+Zw==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>example_test</Name>
+			<Path>./src</Path>
+			<FullName>./src/example_test</FullName>
+			<FullCommandLine>/home/asanchez/GIT/UnitTesting/build/src/example_test</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00180208</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/asanchez/GIT/UnitTesting/build/src/example_test</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkMtqwzAQRff6ilnGC0vtB3RRSAil9IGTrIwJijx1BNLISHJb+vW1rBDiQsF3NY/D3JmpBiJNHVipaVXAh3cWxNlZFDJIUmf8EdunvTiQjnsMcUTFadCmFccW+yA65zqDceyUwaubVExpio5pNFeK1Q9XNVBdfO8hMdn3EodBR+SsLq9qYGvcSZrcR/rU3pFFGlmM5dD/gW9nbr6l7Q2m3QOroTq8wqRm1uFrtI5C9DJOhRepvEt81tvzIh5Wd2BDsWyZDEN0UZqCLbs2ovRl675o/sv/fgheEp/7jBe9P+52m3X6QGY5+wWk06eV====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Jun 16 00:02 CEST</EndDateTime>
+		<EndTestTime>1623794521</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
