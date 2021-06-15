@@ -11,7 +11,8 @@ env:
   BUILD_TYPE: Release
 
 jobs:
-  Test:
+   build-and-test:
+    name: Build and Test
     # The CMake configure and build commands are platform agnostic and should work equally
     # well on Windows or Mac.  You can convert this to a matrix build if you need
     # cross-platform coverage.
@@ -35,10 +36,31 @@ jobs:
       # Execute tests defined by the CMake configuration.  
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       run: ctest -C ${{env.BUILD_TYPE}}
-      
-    - name: Publish Unit Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v1
+    
+    - name: Upload Unit Test Results
       if: always()
+      uses: actions/upload-artifact@v2
       with:
-        files: Testing/**/Test.xml
+        name: Unit Test Results
+        path: ${{github.workspace}}/build/Testing/
       
+   publish-test-results:
+      name: "Publish Unit Tests Results"
+      needs: build-and-test
+      runs-on: ubuntu-latest
+      # the build-and-test job might be skipped, we don't need to run this job then
+      if: success() || failure()
+
+      steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          path: artifacts
+
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v1
+        with:
+          files: artifacts/**/*.xml
+   
+
+
