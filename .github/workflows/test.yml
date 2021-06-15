@@ -41,8 +41,8 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v2
       with:
-        name: Unit Test Results
-        path: ${{github.workspace}}/build/Testing/**/Test.xml
+        name: UnitTestResults
+        path: ${{github.workspace}}/build/Testing/
       
    publish-test-results:
       name: "Publish Unit Tests Results"
@@ -60,7 +60,7 @@ jobs:
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action@v1
         with:
-          files: artifacts/**/*.xml
+          files: artifacts/UnitTestResults/**/*.xml
    
 
 
